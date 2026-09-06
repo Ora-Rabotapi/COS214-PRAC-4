@@ -20,6 +20,8 @@ class Group: public WorkItem{
     void print(int index=0) const override;
     WorkItemIterator* createBurndownIterator() override;
     const std::vector<WorkItem*>& getChildren() const;
+    int getChildCount() const override;
+    WorkItem* getChildAt(int index) const override;
 };
 
 #endif

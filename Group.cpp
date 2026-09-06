@@ -54,3 +54,15 @@ WorkItemIterator* Group::createBurndownIterator(){
 const std::vector<WorkItem*>& Group::getChildren()const {
     return children;
 }
+
+
+int Group::getChildCount() const {
+    return static_cast<int>(children.size());
+}
+
+WorkItem* Group::getChildAt(int index) const {
+    if (index >= 0 && index < static_cast<int>(children.size())) {
+        return children[index];
+    }
+    return nullptr;
+}
