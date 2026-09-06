@@ -2,12 +2,13 @@
 #define WORKITEM_H
 #include <string>
 
-//component 
+//component participant in composite
+//aggregate participant in iterator
 class WorkItemIterator;
 
 class WorkItem{
     public:
-        virtual ~WorkItem();
+        virtual ~WorkItem(){}
         virtual void add(WorkItem* item);
         virtual void remove(WorkItem* item);
         virtual int getChildCount() const;
