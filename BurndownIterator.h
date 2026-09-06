@@ -3,6 +3,7 @@
 #include "WorkItemIterator.h"
 #include <vector>
 
+//concrete iterator
 class WorkItem;
 
 class BurndownIterator:public WorkItemIterator{

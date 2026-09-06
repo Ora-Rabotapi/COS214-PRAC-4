@@ -4,7 +4,8 @@
 #include <string>
 
 class TicketState;
-
+//Leaf participant
+//concrete aggregate participant
 class Ticket:public WorkItem{
     private:
     std::string name;

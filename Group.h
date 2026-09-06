@@ -4,6 +4,8 @@
 #include <vector>
 #include <string>
 
+//Composite participant
+//concrete aggregate participant
 class Group: public WorkItem{
     private:
     std::string name;

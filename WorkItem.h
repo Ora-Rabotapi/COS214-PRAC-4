@@ -2,7 +2,8 @@
 #define WORKITEM_H
 #include <string>
 
-//component 
+//component participant in composite
+//aggregate participant in iterator
 class WorkItemIterator;
 
 class WorkItem{
