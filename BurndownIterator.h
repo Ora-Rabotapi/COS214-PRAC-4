@@ -1,0 +1,5 @@
+#ifndef BURNDOWNITERATOR_H
+#define BURNDOWNITERATOR_H
+
+
+#endif
