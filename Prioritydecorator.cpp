@@ -1,14 +1,14 @@
 #include "PriorityDecorator.h"
 
 PriorityDecorator::PriorityDecorator(WorkItem *wrapped, double priorityCostBump)
-    : TicketDecorator(wrapped), priorityCostBump_(priorityCostBump) {}
+    : TicketDecorator(wrapped), priorityCostBump(priorityCostBump) {}
 
 double PriorityDecorator::getCost() const
 {
-    return wrapped_->getCost() + priorityCostBump_;
+    return wrapped->getCost() + priorityCostBump;
 }
 
 std::string PriorityDecorator::getName() const
 {
-    return "[URGENT] " + wrapped_->getName();
+    return "[URGENT] " + wrapped->getName();
 }

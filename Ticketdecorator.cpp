@@ -1,23 +1,23 @@
 #include "TicketDecorator.h"
 
-TicketDecorator::TicketDecorator(WorkItem* wrapped) : wrapped_(wrapped) {}
+TicketDecorator::TicketDecorator(WorkItem* wrapped) : wrapped(wrapped) {}
 
 TicketDecorator::~TicketDecorator() {
-    delete wrapped_;
+    delete wrapped;
 }
 
 void TicketDecorator::add(WorkItem* child) {
-    wrapped_->add(child);
+    wrapped->add(child);
 }
 
 void TicketDecorator::remove(WorkItem* child) {
-    wrapped_->remove(child);
+    wrapped->remove(child);
 }
 
 bool TicketDecorator::isComposite() const {
-    return wrapped_->isComposite();
+    return wrapped->isComposite();
 }
 
 WorkItemIterator* TicketDecorator::createIterator() const {
-    return wrapped_->createIterator();
+    return wrapped->createIterator();
 }

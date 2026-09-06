@@ -12,7 +12,7 @@ protected:
     void bumpModCount();
 
 private:
-    long modCount_ = 0;
+    long modCount = 0;
 };
 
 #endif

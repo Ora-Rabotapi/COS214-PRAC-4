@@ -17,7 +17,7 @@ public:
     std::string getName() const override = 0;
 
 protected:
-    WorkItem* wrapped_;
+    WorkItem* wrapped;
 };
 
 #endif

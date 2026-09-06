@@ -12,7 +12,7 @@ public:
     std::string getName() const override;
 
 private:
-    double priorityCostBump_;
+    double priorityCostBump;
 };
 
 #endif

@@ -11,7 +11,7 @@ public:
     std::string getName() const override;
 
 private:
-    double reviewOverhead_;
+    double reviewOverhead;
 };
 
 #endif

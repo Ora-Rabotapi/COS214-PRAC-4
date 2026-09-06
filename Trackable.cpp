@@ -4,10 +4,10 @@ Trackable::~Trackable() = default;
 
 long Trackable::getModCount() const
 {
-    return modCount_;
+    return modCount;
 }
 
 void Trackable::bumpModCount()
 {
-    ++modCount_;
+    ++modCount;
 }
