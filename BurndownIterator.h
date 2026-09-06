@@ -9,7 +9,7 @@ class WorkItem;
 class BurndownIterator:public WorkItemIterator{
     private:
     std::vector<WorkItem*> snapshot;
-    int cursor;
+    unsigned int cursor;
 
     void collect(WorkItem* node);
     public:

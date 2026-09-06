@@ -19,7 +19,7 @@ void BurndownIterator::collect(WorkItem* node) {
     snapshot.push_back(node);
 
     const Group* group=dynamic_cast<const Group*>(node);
-    if (group != nullptr) {
+    if (group!=nullptr) {
         const std::vector<WorkItem*>& children = group->getChildren();
         for (std::vector<WorkItem*>::const_iterator it = children.begin(); it != children.end(); ++it) {
             collect(*it);
