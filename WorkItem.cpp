@@ -8,6 +8,6 @@ int WorkItem::getChildCount() const {
     return 0;
 }
 
-WorkItem* WorkItem::getChildAt(int index) const {
+WorkItem* WorkItem::getChildAt(int) const {
     return nullptr;
 }
