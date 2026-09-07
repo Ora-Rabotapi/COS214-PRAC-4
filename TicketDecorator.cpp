@@ -35,7 +35,7 @@ void TicketDecorator::print(int indent) const {
 }
 
 
-WorkItemIterator* TicketDecorator::createBurndownIterator() const {
+WorkItemIterator* TicketDecorator::createBurndownIterator() {
     return wrapped != nullptr ? wrapped->createBurndownIterator():nullptr;
 }
 
