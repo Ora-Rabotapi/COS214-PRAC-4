@@ -11,3 +11,7 @@ int WorkItem::getChildCount() const {
 WorkItem* WorkItem::getChildAt(int) const {
     return nullptr;
 }
+
+bool WorkItem::isBlocked() const {
+    return false;
+}

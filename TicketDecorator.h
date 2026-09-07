@@ -16,6 +16,7 @@ public:
     void print(int indent = 0) const override;
     double getCost() const override;
     std::string getName() const override;
+    bool isBlocked() const override;
 
 protected:
     WorkItem* wrapped;

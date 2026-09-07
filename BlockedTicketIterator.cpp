@@ -13,16 +13,12 @@ void BlockedTicketIterator::collect(WorkItem* node, std::vector<WorkItem*>& out)
         return;
     }
 
-    Ticket* asTicket = dynamic_cast<Ticket*>(node);
-
-    if(asTicket != nullptr){
-        if(asTicket->isBlocked()){
-            out.push_back(node);
-        }
-        return; // a Ticket leaf has no children
+    if (node->isBlocked()) {
+        out.push_back(node);
     }
 
-    for(int i = 0; i < node->getChildCount(); ++i){
+    
+    for (int i = 0; i < node->getChildCount(); ++i) {
         collect(node->getChildAt(i), out);
     }
 }

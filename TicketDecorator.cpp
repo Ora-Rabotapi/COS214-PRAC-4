@@ -46,3 +46,7 @@ std::string TicketDecorator::getName() const {
 double TicketDecorator::getCost() const {
     return wrapped != nullptr ? wrapped->getCost() : 0.0;
 }
+
+bool TicketDecorator::isBlocked() const {
+    return wrapped != nullptr ? wrapped->isBlocked() : false;
+}
