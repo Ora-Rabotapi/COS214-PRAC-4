@@ -16,3 +16,5 @@ class BlockedTicketIterator : public WorkItemIterator{
         bool hasNext();
         WorkItem* next();
 };
+
+#endif
