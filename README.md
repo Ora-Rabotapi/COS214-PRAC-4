@@ -62,7 +62,10 @@ To enter an interactive bash shell inside the container to inspect the environme
 
 docker run --rm -it taskforge:latest /bin/bash
 
-Inside the container shell:
-make clean
-make
+Inside the container shell:  
+
+make clean  
+
+make  
+
 ./taskforge
