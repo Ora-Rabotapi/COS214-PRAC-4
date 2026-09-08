@@ -28,5 +28,5 @@ void TicketState::merge(Ticket*){
 }
 
 void TicketState::logInvalid(const std::string& action) const{
-    std::cout << "[Invalid transition] '" << action << "' is not allowed from state '" << getName() << std::endl;
+    std::cout << "[Invalid transition] " << action << "' is not allowed from state '" << getName() << std::endl;
 }
